@@ -38,5 +38,5 @@ services:
       - ./data/mysql:/var/lib/mysql
 " > docker-compose.yml
 sudo docker-compose up -d
-docker exec -it drupal8 chown -R www-data:www-data /var/www/html/sites/default/files
+sudo docker exec -it drupal8 chown -R www-data:www-data /var/www/html/sites/default/files
 echo end of the task

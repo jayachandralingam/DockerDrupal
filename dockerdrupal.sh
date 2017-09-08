@@ -14,7 +14,7 @@ echo "version: '3.0'
 services:
   drupal:
     image: drupal:8.2-apache
-    --name: drupal
+    container_name: drupal8
     ports:
       - 8080:80
     restart: always
